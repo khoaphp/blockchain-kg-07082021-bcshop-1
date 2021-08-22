@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="<%- obj.domain %>" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- obj.title %></title>
+    <link rel="stylesheet" href="./css/administrator/layout.css" >
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <%- include("./blocks/header.ejs") %>
+        </div>
+        <div id="left">
+            <%- include("./blocks/left.ejs") %>
+        </div>
+        <div id="content">
+            <%- include("./pages/"+page+".ejs") %>
+        </div>
+    </div>
+</body>
+</html>
